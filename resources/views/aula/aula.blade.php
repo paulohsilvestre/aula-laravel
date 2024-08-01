@@ -1,0 +1,22 @@
+<table>
+    <tr>
+        <th>ID</th>
+        <th>TURMA</th>
+        <th>VALOR</th>
+        <th>TURNO</th>
+        <th>STATUS</th>
+        <th>UPDATE</th>
+        <th>CREATE</th>
+    </tr>  
+    @foreach($aulas as $a)  
+    <tr>
+        <td>{{$a->id}}</td>
+        <td>{{$a->turma}}</td>
+        <td>{{$a->valor}}</td>
+        <td>{{$a->turno}}</td>
+        <td>{{$a->status}}</td>
+        <td>{{$a->updated_at}}</td>
+        <td>{{$a->created_at}}</td>
+    </tr>  
+    @endforeach
+</table>
