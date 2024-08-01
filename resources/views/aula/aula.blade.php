@@ -1,3 +1,9 @@
+@extends('layout.index')
+@section('title')
+ <a href="/" class="logo"><strong>CADASTRO DE AULA</strong></a>
+ <a href="/aulas/incluir" style="width:50px;" class="btn btn-sm btn-success float-rigth">INCLUIR</a>
+@endsection
+@section('content')
 <table>
     <tr>
         <th>ID</th>
@@ -20,3 +26,4 @@
     </tr>  
     @endforeach
 </table>
+@endsection
